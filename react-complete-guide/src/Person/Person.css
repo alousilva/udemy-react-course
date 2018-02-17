@@ -7,3 +7,10 @@
     text-align: center;
     background: burlywood;
 }
+
+/*
+@media (min-width: 500px) {
+    .Person {
+        width: 450px;
+    }
+}*/

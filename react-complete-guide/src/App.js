@@ -106,11 +106,8 @@ class App extends Component {
         <div className="App">
             <h1> Hi, i 'm a react app</h1>
             <h2> fdgfgg </h2>
-            <p className={classes.join(" ")}>
-            {" "}
-            This paragraph will turn red when num Persons is less than 3 and bold
-            when num Persons is less than 2{" "}
-            </p>
+            <p className={classes.join(" ")}>This paragraph will turn red when num Persons is less than 3 and bold
+            when num Persons is less than 2</p>
             <button style={style} onClick={this.togglePersonHandler}>
             {this.state.buttonText}
             </button>

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import "./App.css";
+import classes from "./App.css";
 import Person from "./Person/Person";
 
 class App extends Component {
@@ -94,19 +94,19 @@ class App extends Component {
       style.backgroundColor = "red";
     }
 
-    let classes = [];
+    let assignedClasses = [];
     if (this.state.persons.length <= 2) {
-      classes.push("red");
+        assignedClasses.push( classes.red );
     }
     if (this.state.persons.length <= 1) {
-      classes.push("bold");
+        assignedClasses.push( classes.bold );
     }
 
     return (
-        <div className="App">
+        <div className={classes.App}>
             <h1> Hi, i 'm a react app</h1>
             <h2> fdgfgg </h2>
-            <p className={classes.join(" ")}>This paragraph will turn red when num Persons is less than 3 and bold
+            <p className={assignedClasses.join(' ')}>This paragraph will turn red when num Persons is less than 3 and bold
             when num Persons is less than 2</p>
             <button style={style} onClick={this.togglePersonHandler}>
             {this.state.buttonText}
